@@ -1,0 +1,134 @@
+.container{
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.block_1{
+    max-width: 650px;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    border-top: 9px solid #804E4E;
+    border-right: 12px solid #804E4E;
+    border-left: 12px solid #804E4E;
+    border-radius: 10px 10px 0px 0px;
+    flex-direction: column;
+    padding: 15px 9px 0px;
+    background: #FED7A9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow-y: scroll;
+    row-gap: 14px;
+}
+
+body{
+    background: linear-gradient(180deg, #FFD1A7 0%, rgba(235, 222, 210, 0) 100%);
+}
+
+.span_user{
+    padding-top: 30px;
+    width: 300px;
+    height: max-content;
+    background: #511010;
+    border: 0.25px solid #FFDC98;
+    border-radius: 10px 0px 10px 10px;
+    display: flex;
+    color: #FFDC98;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 11px 8px 10px 11px;
+    align-self: flex-end;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+.span_bot{
+    padding-top: 30px;
+    width: 300px;
+    background: #000000;
+    border: 0.25px solid #FFDC98;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    color: #FFDC98;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 11px 8px 10px 11px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}   
+
+.block_1::-webkit-scrollbar {
+    width: 0;
+}
+
+.block_1::-webkit-scrollbar {
+    width: 0;
+}
+
+.block_2{
+    max-width: 100%;
+    background: #804E4E;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    width: 100%;
+    height: 75px;
+    position: relative;
+    
+}
+.input_text{
+    background: #4B2323;
+    border-radius: 10px;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 15px;
+    color: #FFFFFF;
+    position: relative;
+    
+}
+
+.img{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.span_delete{
+    position: relative;
+}
+.span_delete{
+    background: url("../img/delete.svg");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
